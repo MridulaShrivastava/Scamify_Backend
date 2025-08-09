@@ -6,7 +6,7 @@ import os
 from urllib.parse import urlparse
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "https://scamify-frontend.vercel.app/"}})
 
 # Load Model & Features
 model_path = "phishing_model.pkl"
